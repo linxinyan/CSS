@@ -23,7 +23,7 @@
 text-indent值应该是font-size值的2倍 <br>
 2、text-align 水平对齐 <br>
 取值：`left	左对齐（默认值）；center	居中对齐；right 右对齐` <br>
-3、text-decoration	文本修饰 <br>
+3、text-decoration 文本修饰 <br>
 取值：`none（默认值）；underline 下划线；line-through 中划线；overline 顶划线` <br>
 在实际开发中，通常会使用text-decoration:none; 去除a元素的下划线 <br>
 4、text-transform 大小写转换	<br>
@@ -56,8 +56,38 @@ list-style-type属性是针对ol或者ul元素的，开发中常用`list-style-t
 ### 八、图片样式
 1、图片对齐 <br>
 水平对齐：text-align 取值：`left、center、right` <br>
-垂直对齐：vertical-align 取值：`top、middle、bottom、baseline	基线对齐`
+垂直对齐：vertical-align 取值：`top、middle、bottom、baseline	基线对齐` <br>
+2、文字环绕 float <br>
+文字环绕着图片进行布局，取值：`left、right`
+### 九、背景样式
+1、背景颜色 background-color <br>
+2、背景图片地址 `background-image: url(图片路径);` <br>
+3、背景图片重复 background-repeat <br>
+取值：
+
+    repeat	在水平方向和垂直方向上同时平铺（默认值）
+    repeat-x	只在水平方向（x轴）上平铺
+    repeat-y	只在垂直方向（y轴）上平铺
+    no-repeat	不平铺
+4、背景图片位置 `background-position: 水平距离 垂直距离;` <br>
+水平距离和垂直距离取像素值或关键字（top left、center right、bottom center等） 
+5、背景图片固定 background-attachment <br>
+取值：`scroll 滚动（默认值）、fixed 固定不动` 
+### 十、超链接样式
+1、超链接伪类
+
+    a:link{...}      定义a元素未访问时的样式
+    a:visited{...}   定义a元素访问后的样式
+    a:hover{...}     定义鼠标经过a元素时的样式
+    a:active{...}    定义鼠标点击激活时的样式
+定义4个伪类，必须按照“link、visited、hover、active”的顺序，不然浏览器可能无法正常显示这4种样式。 <br>
+在实际开发中，通常只会用到两种状态：未访问时状态和鼠标经过状态 `a{...} 和 a:hover{...}` <br>
+:hover伪类不只限用于a元素，它可定义鼠标经过任何元素时的样式 <br>
+2、鼠标样式 cursor  <br>
+取值：`default、pointer、text` <br>
+自定义鼠标样式：`cursor: url(图片地址), 属性值;`  如：`cursor:url(img/cursor/default.cur),default;` <br>
+属性值一般为3种：default、pointer和text
+### 十一、盒子模型
 
 
-
-
+    
