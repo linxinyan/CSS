@@ -88,6 +88,30 @@ list-style-type属性是针对ol或者ul元素的，开发中常用`list-style-t
 自定义鼠标样式：`cursor: url(图片地址), 属性值;`  如：`cursor:url(img/cursor/default.cur),default;` <br>
 属性值一般为3种：default、pointer和text
 ### 十一、盒子模型
+* 所有的元素都可以看成一个盒子 <br>
+盒子模型是由四个属性组成的：content（内容）、padding（内边距）、border（边框）、margin（外边距）<br>
+#### 1、内容区 content：呈现了盒子的主要信息内容，这些内容可以是文本、图片等 
+3个属性：width、height和overflow。width和height属性指定的是盒子内容区的高度和宽度（不包括内边距）；当内容过多超出width和height时，使用overflow属性来指定溢出处理方式。<br>
+`只有块元素才可以设置width和height；行内元素设置的width和height无法生效，它的宽度和高度只能由内容区撑起来。`
+#### 2、内边距 padding：指的是内容区和边框之间的空间，可以看成是内容区的背景区域
+内边距的属性有5种：padding-top、padding-bottom、padding-left、padding-right以及综合了以上4个方向的简写内边距属性padding（顺时针，上右下左）。
+#### 3、边框 border
+#### 4、外边距 margin：两个盒子之间的距离，它可能是子元素与父元素之间的距离，也可能是兄弟元素之间的距离
+外边距的属性有5种：margin-top、margin-bottom、margin-left、margin-right以及综合了以上4个方向的简写外边距属性margin（顺时针，上右下左）。<br>
+* 当既有父元素，也有兄弟元素时，优先看四个方向有没有兄弟元素存在。如果该方向有兄弟元素，则这个方向的margin就是相对于兄弟元素而言。如果该方向没有兄弟元素，则这个方向的margin就是相对于父元素而言。
+
+    脱离文档流的两种方法：浮动和定位
+### 十一、浮动布局 float
+清除浮动带来的影响：`clear: both;` （我们一般都是在浮动元素后面再增加一个空元素，然后为这个空元素定义clear:both来清除浮动。） <br>
+此外还有overflow:hidden; 伪元素等方法
+### 十二、定位布局 position
+#### 1、固定定位：固定的元素不会随着滚动条的拖动而改变位置。
+    position: fixed;
+通过top、bottom、left和right这4个属性定义元素位置，这4个值的参考对象是浏览器的4条边，一般只会用到其中两个。<br>
+固定定位最常用于实现“回顶部特效”
+#### 2、相对定位：该元素的位置是相对于它的原始位置计算。
+relative
 
 
-    
+
+
