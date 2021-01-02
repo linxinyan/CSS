@@ -100,7 +100,7 @@ list-style-type属性是针对ol或者ul元素的，开发中常用`list-style-t
 外边距的属性有5种：margin-top、margin-bottom、margin-left、margin-right以及综合了以上4个方向的简写外边距属性margin（顺时针，上右下左）。<br>
 * 当既有父元素，也有兄弟元素时，优先看四个方向有没有兄弟元素存在。如果该方向有兄弟元素，则这个方向的margin就是相对于兄弟元素而言。如果该方向没有兄弟元素，则这个方向的margin就是相对于父元素而言。
 
-    脱离文档流的两种方法：浮动和定位
+        脱离文档流的两种方法：浮动和定位
 ### 十一、浮动布局 float
 清除浮动带来的影响：`clear: both;` （我们一般都是在浮动元素后面再增加一个空元素，然后为这个空元素定义clear:both来清除浮动。） <br>
 此外还有overflow:hidden; 伪元素等方法
