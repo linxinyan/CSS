@@ -3,7 +3,7 @@
 ### 一、CSS引入方式
 1、外部样式表 `<link rel="stylesheet" type="text/css" href="文件路径" />` <br>
 2、内部样式表 `<style type="text/css"></style>` <br>
-3、行内样式表：在“标签的style属性”中定义
+3、行内样式表：在“标签的style属性”中定义 eg：`<p style="font-weight:bold; color:red;"></p>`
 #### 外部样式表多用于公有样式，内部样式表多用于私有样式，行内样式表多用于小修改或优先级等方面
 ### 二、CSS选择器
 1、元素选择器 <br>
