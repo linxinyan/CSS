@@ -2,7 +2,8 @@
 * 在前端开发中，对于外观控制一般用CSS来实现，而不是使用标签来实现，这更加符合结构与样式分离的原则，提高可读性和可维护性。
 ### 一、CSS引入方式
 1、外部样式表 `<link rel="stylesheet" type="text/css" href="文件路径" />` <br>
-2、内部样式表 `<style type="text/css"></style>`
+2、内部样式表 `<style type="text/css"></style>` <br>
+3、行内样式表：在“标签的style属性”中定义
 ### 二、CSS选择器
 1、元素选择器 <br>
 2、id选择器 <br>
